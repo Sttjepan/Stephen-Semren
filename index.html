@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stephen Semren - Portfolio</title>
+    <meta name="description" content="Portfolio of Stephen Semren - Advertising & Marketing student with programming expertise.">
+    <meta name="keywords" content="Stephen Semren, Portfolio, Advertising, Marketing, Programming, Python, HTML, CSS">
+    <meta name="author" content="Stephen Semren">
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/professional-theme.css">
+    <script defer src="scripts/main.js"></script>
+    <style>
+        html {
+            scroll-behavior: smooth;
+        }
+        .toggle-theme {
+            position: fixed;
+            top: 10px;
+            right: 10px;
+            background: #E0E1DD;
+            color: #333;
+            padding: 10px 15px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .dark-mode {
+            background-color: #121212;
+            color: #E0E1DD;
+        }
+        .experience, .education, .contact {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 50px 20px;
+        }
+        .experience-entry, .education-entry, .contact-entry {
+            display: flex;
+            background: #1B263B;
+            padding: 20px;
+            margin-bottom: 20px;
+            border-radius: 8px;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+            align-items: center;
+            justify-content: flex-start;
+        }
+        .company-logo {
+            width: 60px;
+            height: 60px;
+            object-fit: contain;
+            margin-right: 20px;
+            border-radius: 5px;
+        }
+        .experience-details, .education-details, .contact-details {
+            flex: 1;
+            text-align: left;
+        }
+        .experience-details h3, .education-details h3, .contact-details h3 {
+            margin: 0;
+            color: #E0E1DD;
+        }
+        .experience-details p, .education-details p, .contact-details p {
+            margin: 5px 0;
+            color: #A5B1C2;
+        }
+    </style>
+</head>
+<body>
+    <div class="toggle-theme" onclick="toggleTheme()">Toggle Dark/Light Mode</div>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#hero">Home</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#education">Education</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <main>
+        <section id="hero" class="hero">
+            <div class="hero-content">
+                <img src="assets/images/profile.jpg" alt="Stephen Semren" class="profile-pic">
+                <div class="hero-text">
+                    <h1>Hello! I'm <span class="highlight">Stephen Semren</span></h1>
+                    <p>I'm currently studying Advertising and Marketing at Sheridan College - Hazel McCallion Campus. I like to use my programming experience in Python, HTML&CSS, Java/JavaScript, and Ruby for fun projects like a Spotify Playlist Mood Analyzer and a TFT Meta Site that I'm currently working on!</p>
+                    <a href="assets/Stephen_Semren_Resume.pdf" download class="resume-button">Download Resume</a>
+                </div>
+            </div>
+        </section>
+
+        <section id="experience" class="experience">
+            <h2>Experience</h2>
+            <div class="experience-entry">
+                <img src="assets/images/lcbo_black.png" alt="LCBO Logo" class="company-logo">
+                <div class="experience-details">
+                    <h3>LCBO - Customer Service Representative</h3>
+                    <p><strong>Dates:</strong> December 2023 - January 2024</p>
+                </div>
+            </div>
+            <div class="experience-entry">
+                <img src="assets/images/mcdonalds.png" alt="McDonald's Logo" class="company-logo">
+                <div class="experience-details">
+                    <h3>McDonald's - Crew Member</h3>
+                    <p><strong>Dates:</strong> October 2020 - March 2021</p>
+                </div>
+            </div>
+            <div class="experience-entry">
+                <img src="assets/images/efficient_pools.png" alt="Efficient Pools Logo" class="company-logo">
+                <div class="experience-details">
+                    <h3>Efficient Pools - Swimming Pool Technician</h3>
+                    <p><strong>Dates:</strong> September 2022 - December 2022</p>
+                </div>
+            </div>
+            <div class="experience-entry">
+                <img src="assets/images/oakville_soccer.png" alt="Oakville Soccer Logo" class="company-logo">
+                <div class="experience-details">
+                    <h3>Oakville Soccer Club - Referee</h3>
+                    <p><strong>Dates:</strong> September 2015 - May 2019</p>
+                </div>
+            </div>
+            <div class="experience-entry">
+                <img src="assets/images/PianoPiano.jpg" alt="Piano Piano Logo" class="company-logo">
+                <div class="experience-details">
+                    <h3>Piano Piano - Kitchen Staff</h3>
+                    <p><strong>Dates:</strong> July 2021 - January 2023</p>
+                </div>
+            </div>
+        </section>
+        
+        <section id="education" class="education">
+            <h2>Education</h2>
+            <div class="education-entry">
+                <img src="assets/images/SheridanCollege.logo_.jpg" alt="Sheridan College Logo" class="company-logo">
+                <div class="education-details">
+                    <h3>Sheridan College - Advertising & Marketing</h3>
+                    <p><strong>Dates:</strong> January 2023 - Present</p>
+                </div>
+            </div>
+        </section>
+        
+        <section id="contact" class="contact">
+            <h2>Contact</h2>
+            <div class="contact-entry">
+                <img src="assets/images/email.png" alt="Email Logo" class="company-logo">
+                <div class="contact-details">
+                    <h3>Email</h3>
+                    <p><a href="mailto:stephensemren1011@gmail.com" style="color: #A5B1C2; text-decoration: none;">stephensemren1011@gmail.com</a></p>
+                </div>
+        </section>
+    </main>
+</body>
+</html>

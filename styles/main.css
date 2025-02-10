@@ -1,0 +1,121 @@
+/* styles/professional-theme.css */
+
+:root {
+    --background-dark: #0D1B2A;
+    --background-light: #1B263B;
+    --primary-color: #E0E1DD;
+    --accent-color: #778DA9;
+    --highlight-color: #F4A261;
+}
+
+body {
+    background-color: var(--background-dark);
+    color: var(--primary-color);
+    font-family: 'Poppins', sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background: var(--background-light);
+    padding: 15px 20px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+nav ul li a {
+    color: var(--primary-color);
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: var(--highlight-color);
+}
+
+.hero {
+    background: linear-gradient(135deg, var(--background-dark), var(--background-light));
+    padding: 100px 20px;
+    text-align: center;
+}
+
+.hero-content {
+    max-width: 800px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.profile-pic {
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 15px;
+    border: 3px solid var(--highlight-color);
+}
+
+.resume-button {
+    background: var(--highlight-color);
+    color: var(--background-dark);
+    padding: 10px 20px;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+    transition: background 0.3s;
+}
+
+.resume-button:hover {
+    background: var(--accent-color);
+}
+
+.projects {
+    text-align: center;
+    padding: 60px 20px;
+    background: var(--background-light);
+}
+
+.project-grid {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.project-item {
+    background: var(--background-dark);
+    padding: 20px;
+    border-radius: 10px;
+    width: 300px;
+    transition: transform 0.3s;
+}
+
+.project-item:hover {
+    transform: scale(1.05);
+}
+
+.skills, .experience, .contact {
+    text-align: center;
+    padding: 60px 20px;
+}
+
+footer {
+    text-align: center;
+    padding: 15px;
+    background: var(--background-light);
+}

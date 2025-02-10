@@ -1,0 +1,88 @@
+/* styles/professional-theme.css */
+
+:root {
+    --background-dark: #0D1B2A;
+    --background-light: #1B263B;
+    --primary-color: #E0E1DD;
+    --accent-color: #778DA9;
+    --highlight-color: #F4A261;
+    --card-background: #FFFFFF;
+}
+
+body {
+    background-color: var(--background-dark);
+    color: var(--primary-color);
+    font-family: 'Poppins', sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background: var(--background-light);
+    padding: 15px 20px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+nav ul li a {
+    color: var(--primary-color);
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: var(--highlight-color);
+}
+
+.hero {
+    background: linear-gradient(135deg, var(--background-dark), var(--background-light));
+    padding: 100px 20px;
+    text-align: center;
+}
+
+.experience, .education {
+    text-align: center;
+    padding: 60px 20px;
+    background: var(--background-light);
+}
+
+.experience-card, .education-card {
+    background: var(--card-background);
+    color: var(--background-dark);
+    padding: 20px;
+    border-radius: 10px;
+    max-width: 700px;
+    margin: 20px auto;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    text-align: left;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.experience-card img, .education-card img {
+    width: 100px;
+    height: auto;
+    object-fit: contain;
+    border-radius: 5px;
+}
+
+footer {
+    text-align: center;
+    padding: 15px;
+    background: var(--background-light);
+}
